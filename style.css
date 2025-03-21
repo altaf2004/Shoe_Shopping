@@ -1,0 +1,149 @@
+/* Reset some default styles */
+body, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Product Section Styles */
+.product-container {
+    width: 95%; /* Increased width to make it span almost the full page */
+    margin: 20px auto; /* Keep slight centering */
+    padding: 40px;
+}
+
+/* Center the Product Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: orange;
+}
+
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items */
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Stretch fully */
+    max-width: 1200px; /* Set a maximum width to prevent it from being too stretched */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Product Images Section */
+.product-images {
+    display: flex;
+    gap: 20px;
+    flex: 2; /* Increase image area width */
+}
+
+.thumbnail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.thumbnail-images img:hover {
+    border: 2px solid orange;
+}
+
+.main-image img {
+    width: 450px; /* Adjusted image size */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product Details Section */
+.product-details {
+    flex: 2; /* Adjust width to distribute more space */
+    padding-left: 40px;
+    text-align: left;
+    max-width: 400px;
+}
+
+/* Price & Add to Cart */
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-left: 10px;
+}
+
+.cart-button {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    width: 100%; /* Make it stretch full width inside the section */
+    max-width: 250px;
+    text-align: center;
+}
+
+.cart-button:hover {
+    background-color: darkorange;
+}
